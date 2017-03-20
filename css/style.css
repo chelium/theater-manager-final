@@ -93,7 +93,9 @@ header {
 
 /* FOOTER */
 footer {
-    margin-top: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     color: var(--footer-text-color);
     text-align: center;
     font-size: 14px;
