@@ -7,7 +7,10 @@ session_start();
     <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body>
-    <?php include '_header.php'; ?>
-    <?php include '_footer.php'; ?>
+    <?php include 'includes/_header.php'; ?>
+    <main>
+    Filler.
+    </main>
+    <?php include 'includes/_footer.php'; ?>
   </body>
 </html>

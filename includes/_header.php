@@ -26,4 +26,5 @@
     </div>
   </div>
   <div id="logoutDiv" class="navbtn">Logout</div><!-- Not Working --> 
+  <div class="clear"></div>
 </header>
