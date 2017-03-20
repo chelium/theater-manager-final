@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
+:root {
+    --bg-color: #adb8ca;
+    --primary-color: #646464;
+    --hover-bg-color: #7d7d7d;
+    --hover-text-color: #00ffcc; 
+    --shadow-color: rgba(0,0,0,0.2);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    font-family: "Montserrat", san-serif;
+}
+
+header {
+    text-align: center;
+}
+
+#navbar-left {
+    float: left;
+}
+
+.navbtn {
+    display: inline-block;
+    width: 150px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    box-shadow: 4px 4px 8px 0px var(--shadow-color);
+}
+
+#logoutDiv{
+    float: right;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropbtn {
+    width: 150px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    box-shadow: 4px 4px 8px 0px var(--shadow-color);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 150px;
+    font-size: 10px;
+    z-index: 1;
+}
+
+.dropbtn:hover {
+    color: var(--hover-text-color);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--hover-bg-color);
+}

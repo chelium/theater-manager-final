@@ -4,7 +4,7 @@ session_start();
 <html>
   <head>
     <title>Theater Manager</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body>
     <?php include '_header.php'; ?>
