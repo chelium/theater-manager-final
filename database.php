@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 // Use this to connect to the database
 function connect() {
