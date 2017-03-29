@@ -1,4 +1,5 @@
 <?php
+include("helpers.php");
 session_start();
 ?>
 <html>
@@ -17,9 +18,10 @@ session_start();
       </div>
       <div>
         <form id="loginForm" class="authForm"
-              
+              action="<?php 
+                      ?>"
               method="post">
-          <p id="loginPrompt">Please Sign In</p>
+          <p class="authPrompt">Please Sign In</p>
           <input type="text" class="loginInputBox"
                  name="name" placeholder="username"
                  required autofocus></br>
