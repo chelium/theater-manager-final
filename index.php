@@ -1,7 +1,7 @@
 <?php
 include("helpers.php");
 session_start();
-auth_check();
+//auth_check();
 ?>
 <html>
   <head>

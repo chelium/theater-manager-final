@@ -13,26 +13,18 @@ session_start();
       <h1>Welcome to Theater Manager</h1>
     </header>
     <main id="loginContainer" class="authContainer">
-      <div>
-        
-      </div>
-      <div>
-        <form id="loginForm" class="authForm"
-              action="<?php 
-                      ?>"
-              method="post">
-          <p class="authPrompt">Please Sign In</p>
-          <input type="text" class="loginInputBox"
-                 name="name" placeholder="username"
-                 required autofocus></br>
-          <input type="password" class="loginInputBox"
-                 name="pass" placeholder="password"
+      <form id="loginForm" action="index.php" class="authForm">
+        <p class="authPrompt">Please Sign In</p>
+        <input type="text" class="loginInputBox"
+               name="name" placeholder="username"
+               required autofocus></br>
+        <input type="password" class="loginInputBox"
+               name="pass" placeholder="password"
                  required></br>
-          <a href="forgotpass.php">Forgot password?</a>
-          <input type="submit" id="loginButton"
-                 name="logIn" value="Log in" />
-        </form>
-      </div>
+        <a href="forgotpass.php">Forgot password?</a>
+        <input type="submit" id="loginButton"
+               name="logIn" value="Log in" />
+      </form>
     </main>
     <?php include 'includes/_footer.php'; ?>
   </body>

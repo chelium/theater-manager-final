@@ -17,31 +17,17 @@ function auth_check() {
 }
 
 // Use this to login; Returns true on successful login and false on failed login
-function login($name, $pass) {
-    $row = get_user($name);
+function attempt_login($name, $pass) {
+    $result = get_user($name);
+    $row = mysqli_fetch_array($result);
     if ($row['pass'] == $pass) {
         $_SESSION['username'] = $row['name'];
         $_SESSION['password'] = $row['pass'];
         //$_SESSION['theaters'] = $row['theaters'];
         //$_SESSION['schedules'] = $row['schedules'];
-        header("location:index.php");
         return true;
     }
     return false;
-}
-
-// Create test user
-function create_test_user() {
-    $conn = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
-    $query = get_user("user");
-    if (!$query || mysqli_num_rows($query) == 0) {
-        $sql = "INSERT INTO users (name, pass, prices_key, theaters_key, schedules_key, revenues_key) VALUES('user','123','1','1','1', '1')";
-        if ($conn->query($sql)) {
-            echo "User successfully created.";
-        } else {
-            echo "ERROR: " . mysqli_error($conn);
-        }
-    }
 }
 
 // Use this to query the database for a user

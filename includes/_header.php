@@ -1,6 +1,6 @@
 <header>
   <div id="navbar-left">
-    <div class="navbtn" href="index.php">Home</div><!-- Not Working -->
+    <div class="navbtn"><a href="index.php">Home</a></div><!-- Not Working -->
     <div class="dropdown">
       <div class="dropbtn">Facility</div><!-- Not Working -->
       <div class="dropdown-content">
@@ -18,13 +18,13 @@
       </div>
     </div>
     <div class="dropdown">
-      <div class="dropbtn">Schedule</div><!-- Not Working -->
+      <div class="dropbtn">Schedule</div>
       <div class="dropdown-content">
         <a href="create.php">Create/Edit Schedules</a>
-        <a href="view.php">View Schedules</a>
+        <!--<a href="view.php">View Schedules</a>-->
       </div>
     </div>
   </div>
-  <div id="logoutDiv" class="navbtn">Logout</div><!-- Not Working --> 
+  <div id="logoutDiv" class="navbtn"><a href="login.php">Logout</a></div>
   <div class="clear"></div>
 </header>
